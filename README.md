@@ -18,4 +18,3 @@ Funcionalidades
 -  Sistema de apostas com saldo inicial e recarga
 -  Lógica de trapaça "escondida" no dealer
 -  Verifica saldo, impede apostas inválidas
--  Mensagens personalizadas e emojis no terminal

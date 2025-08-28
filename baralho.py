@@ -1,7 +1,9 @@
 import random
 
 def criar_baralho():
-    baralho = [2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11] * 4
+    tipos = ['♠', '♥', '♦', '♣']
+    valores = [2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11]
+    baralho = [(valor, tipo) for valor in valores for tipo in tipos]
     random.shuffle(baralho)
     return baralho
 

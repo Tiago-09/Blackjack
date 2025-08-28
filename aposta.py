@@ -3,9 +3,10 @@ from baralho import criar_baralho
 from oponente import dealer_joga
 
 def jogar_blackjack(saldo, rodada):
-    print("================================")
+    
     print(f"\n Saldo atual: R${saldo}")
     print(" ")
+
     try:
         aposta = int(input("Digite o valor da aposta (mínimo R$10, máximo R$999): R$")) 
     except ValueError:

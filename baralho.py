@@ -9,6 +9,6 @@ def distribuir_carta(baralho, trapacear=False, pontos_jogador=0):
     if trapacear and pontos_jogador >= 18:
         for carta in sorted(baralho, reverse=True):
             if pontos_jogador < carta <= 21:
-                baralho.remove(carta)
+                baralho.remove(carta) 
                 return carta
     return baralho.pop()

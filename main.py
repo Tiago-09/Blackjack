@@ -32,7 +32,7 @@ def iniciar_jogo():
                     break
                 else:
                     continue
-
+                     
         saldo = jogar_blackjack(saldo, rodada)
         rodada += 1
         print(f"\nSeu novo saldo: R${saldo}\n")

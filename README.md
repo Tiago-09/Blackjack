@@ -1,6 +1,6 @@
 # ♠️ Projeto do jogo Blackjack - Jogo de Cartas no Terminal
 
-#Participantes:João Vitor Donato Oliveira, Tiago Vargas e Guilherme Vicente Seixas
+#Participantes: João Vitor Donato Oliveira, Tiago Vargas e Guilherme Vicente Seixas
 
 Bem-vindo ao nosso projeto de **Blackjack** desenvolvido em **Python**!  
 Um jogo de cassino clássico onde você joga contra o dealer e tenta somar 21 pontos sem ultrapassar.  

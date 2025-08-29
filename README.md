@@ -18,3 +18,7 @@ Funcionalidades
 -  Sistema de apostas com saldo inicial e recarga
 -  Lógica de trapaça "escondida" no dealer
 -  Verifica saldo, impede apostas inválidas
+
+# Fluxograma do algoritmo
+<img width="5960" height="4749" alt="FLUXOGRAMA BLACKJACK" src="https://github.com/user-attachments/assets/23645145-973e-40b1-87a7-741a5ef1836b" />
+

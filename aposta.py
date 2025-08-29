@@ -31,7 +31,7 @@ def jogar_blackjack(saldo, rodada):
         if acao == 'p':
          jogador.append(baralho.pop())
         if calcular_pontos(jogador) > 21:
-    
+            
         print(f"\nSuas cartas finais: {jogador} | Total: {calcular_pontos(jogador)}")
         print("\nVocê estourou! Dealer vence. \n")
         return saldo - aposta

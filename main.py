@@ -3,12 +3,20 @@ from calculopontos import calcular_pontos
 from oponente import dealer_joga
 from aposta import jogar_blackjack
 
+import os
+
+def limpar_tela():
+    # Limpa a tela no Windows ou Linux/Mac
+    os.system('cls' if os.name == 'nt' else 'clear')
+
 def iniciar_jogo():
     saldo = 100
     rodada = 1
+    limpar_tela()
     print("\n-------------------------------")
     print(" 🔴 Bem-vindo ao cassino!🔴 ")
     print("-------------------------------\n")
+    
     while True:
         if saldo <= 0:
             print("\n Você faliu! \n")
@@ -36,14 +44,20 @@ def iniciar_jogo():
         saldo = jogar_blackjack(saldo, rodada)
         rodada += 1
         print(f"\nSeu novo saldo: R${saldo}\n")
+        
         if saldo > 0:
             continuar = input("Deseja jogar novamente? [s/n] ").lower()
-            print(" ")
-            if continuar != 's':
+            if continuar == 's':
+                limpar_tela()  # limpa a tela antes da próxima rodada
+                continue
+            else:
                 confirmar_saida = input("Você realmente deseja sair? [s/n] ").lower()
-                print(" ")
                 if confirmar_saida == 's':
                     print("\nSaindo do cassino... volte sempre! \n")
                     break
+                else:
+                    limpar_tela()
+                    continue
 
+# Inicia o jogo
 iniciar_jogo()
